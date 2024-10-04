@@ -21,9 +21,11 @@ app.use(cookieParser())
 //routes import
 
 import pRouter from './routes/projectfeed.routes.js'
+import TeamRouter from "./routes/Team.routes.js"
 
 //route decleartion
 app.use("/api/v1/projects", pRouter)
+app.use("/api/v1/team", TeamRouter)
 
 
 export { app }
